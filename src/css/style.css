@@ -1,0 +1,155 @@
+body {
+    background-color: rgba(120, 82, 246, 0.694);
+}
+
+.tudo {
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    height: 100px;
+    padding-block: 10px;
+}
+
+.image {
+    height: 100px;
+    border-radius: 50px;
+}
+
+header h1 {
+    align-self: center;
+    font-size: 2rem;
+    background-image: linear-gradient(to right, #c0c0c0, #ffffff),
+        linear-gradient(to bottom, #ffffff, #c0c0c0);
+    background-size: 100% 2px, 2px 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    margin-block: 25px;
+    gap: 40px;
+}
+
+.areaDigitar {
+    display: flex;
+    margin-inline: 5%;
+}
+
+.areaBotoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.areaSaida {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    position: relative;
+
+}
+
+.button_style {
+    background-color: chartreuse;
+    width: 90px;
+    height: 35px;
+    border-radius: 50% 10%;
+    border: none;
+    text-align: center;
+    font-size: 13px;
+    transition: 0.5s;
+}
+
+.button_style:hover {
+    background-color: #0b520e;
+    color: aliceblue;
+    border-radius: 10% 50%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.button_copy {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+}
+
+.estiloquadro {
+    flex-grow: 1;
+    resize: none;
+    user-select: none;
+    outline: none;
+    border-radius: 0 10% 50%;
+}
+
+.quadroCriptografado {
+    display: none;
+    flex-grow: 1;
+}
+
+.tela2 {
+    display: none;
+    flex-grow: 1;
+    outline: none;
+    border-radius: 0 10% 50%;
+    background-color: #ffffff;
+    font-size: 10px;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    color: coral;
+}
+
+.embrulho {
+    flex-grow: 1;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #c0c0c0, #ffffff),
+        linear-gradient(to bottom, #ffffff, #c0c0c0);
+    background-size: 100% 2px, 2px 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.icon-alert {
+    width: 20px;
+}
+
+.alerta {
+    color: coral;
+    animation: animacao-alerta 2s infinite;
+    font-size: 20px;
+}
+
+.button_copy {
+    background-color: chartreuse;
+    border-radius: 10%;
+    border: none;
+}
+
+.button_copy:hover {
+    cursor: pointer;
+    background-color: coral;
+}
+
+.selecionado {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 5%;
+}

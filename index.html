@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Protest+Revolution&family=Young+Serif&display=swap"
+        rel="stylesheet">
+    <!-- FONTE -->
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/animation.css">
+
+    <title>Decodificador</title>
+</head>
+
+<body>
+    <div class="tudo">
+        <header>
+            <img class="image" src="./src/assets/images/MariaRita2.0.png" alt="logo"> <!-- Imagem -->
+            <h1>Decodificador</h1>
+        </header>
+        <main>
+            <section class="areaDigitar embrulho">
+                <textarea class="estiloquadro" name="" id="areaDoTexto1" placeholder="Digite seu texto Aqui!"
+                    spellcheck="false"></textarea>
+            </section>
+            <section class="areaBotoes">
+                <button class="button_style" onclick="ativaCriptografia()">Criptografar</button>
+                <div class="alerta">
+                    <svg style="width: 16px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                        class="icon-alert">
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+                        </svg>
+                    Apenas letras minúsculas e sem acento.
+                </div>
+                <button class="button_style" onclick="desativaCriptografia()">Descriptografar</button>
+            </section>
+            <section class="areaSaida embrulho">
+                <div class="quadroCriptografado" id="paginaCriptografia">
+                    <textarea class="estiloquadro" id="areaDoTexto2" readonly spellcheck="false"></textarea>
+                    <button onclick="copiar()" class="button_copy">Copiar</button>
+                </div>
+                <div class="tela2 embrulho selecionado" id="paginaMensagem">
+                    <h1>Nenhuma mensagem encontrada</h1>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="interface3">
+                <div class="rodape">
+                    <p>Desenvolvido por <a href="https://github.com/KingsNofsky" target="_blank">Marcio Junior</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./src/script/app.js"></script>
+</body>
+
+</html>
