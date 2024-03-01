@@ -5,6 +5,8 @@ body {
 .tudo {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    max-width: 900px;
     height: 100dvh;
 }
 
@@ -90,6 +92,9 @@ main {
     user-select: none;
     outline: none;
     border-radius: 0 10% 50%;
+    padding: 20px;
+    font-size: 1rem;
+    
 }
 
 .quadroCriptografado {
@@ -117,13 +122,16 @@ main {
 footer {
     display: flex;
     justify-content: center;
-    font-weight: bold;
     text-decoration: none;
     background-image: linear-gradient(to right, #c0c0c0, #ffffff),
         linear-gradient(to bottom, #ffffff, #c0c0c0);
     background-size: 100% 2px, 2px 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    /* margin-bottom: 10px; */
+}
+footer a:hover {
+    outline: dotted 2px rgba(255, 255, 246, 0.694);
 }
 
 
